@@ -1,6 +1,8 @@
 project "spdlog"
 
 	kind "StaticLib"
+	includedirs "include"
+	defines "SPDLOG_COMPILED_LIB"
 
 	files {
 
@@ -8,5 +10,3 @@ project "spdlog"
 		"include/spdlog/**.h"
 
 	}
-
-	includedirs "include"
